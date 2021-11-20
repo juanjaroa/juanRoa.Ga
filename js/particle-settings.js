@@ -5,8 +5,7 @@ particlesJS("particles-js", {
         shape: {
             type: ["circle", "edge", "triangle", "polygon"],
             stroke: { width: 0, color: "#000000" },
-            polygon: { nb_sides: 6 },
-            //image: { src: "img/github.svg", width: 100, height: 100 }
+            polygon: { nb_sides: 6 }
         },
         opacity: {
             value: 0.75,
