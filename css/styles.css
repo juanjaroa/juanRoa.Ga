@@ -2831,7 +2831,7 @@ font-family: 'Roboto Slab', serif;
 
 .s-header__social li {
     padding-left : 0;
-    margin-right : 2rem;
+    margin-right : 2.5rem;
     line-height  : 1;
 }
 
@@ -2862,7 +2862,7 @@ font-family: 'Roboto Slab', serif;
     }
 
     .s-header__social li {
-        margin-right : 1rem;
+        margin-right : 2.5rem;
     }
 
     .s-header__social svg {
