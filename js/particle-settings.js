@@ -1,11 +1,11 @@
 particlesJS("particles-js", {
     particles: {
-        number: { value: 300, density: { enable: true, value_area: 600 } },
+        number: { value: 250, density: { enable: true, value_area: 1000 } },
         color: { value: "random" },
         shape: {
             type: ["circle", "edge", "triangle", "polygon"],
-            stroke: { width: 0, color: "#000000" },
-            polygon: { nb_sides: 6 }
+            stroke: { width: 0, color: "" },
+            polygon: { nb_sides: 5 }
         },
         opacity: {
             value: 0.75,
@@ -43,11 +43,11 @@ particlesJS("particles-js", {
             resize: true
         },
         modes: {
-            grab: { distance: 200, line_linked: { opacity: 1 } },
-            bubble: { distance: 100, size: 5, duration: 0.5, opacity: 1 },
-            repulse: { distance: 33, duration: 0.5 },
-            push: { particles_nb: 10 },
-            remove: { particles_nb: 2 }
+            grab: { distance: 300, line_linked: { opacity: 1 } },
+            bubble: { distance: 150, size: 5, duration: 0.5, opacity: 1 },
+            repulse: { distance: 50, duration: 0.5 },
+            push: { particles_nb: 6 },
+            remove: { particles_nb: 1 }
         }
     },
     retina_detect: true

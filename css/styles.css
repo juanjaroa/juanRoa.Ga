@@ -352,7 +352,8 @@ a {
 abbr[title] {
     border-bottom   : none;
     text-decoration : underline;
-    text-decoration : underline dotted;
+    -webkit-text-decoration : underline dotted;
+            text-decoration : underline dotted;
 }
 
 b,
@@ -1856,12 +1857,10 @@ img,
 
 @-webkit-keyframes load {
     0% {
-        -webkit-transform : rotate(0deg);
         transform         : rotate(0deg);
     }
 
     100% {
-        -webkit-transform : rotate(360deg);
         transform         : rotate(360deg);
     }
 }
@@ -2026,12 +2025,6 @@ label>input[type="radio"] {
     color : var(--color-placeholder);
 }
 
-:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color   : var(--color-placeholder);
-    opacity : 1;
-}
-
 ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     color   : var(--color-placeholder);
@@ -2066,6 +2059,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     -webkit-text-fill-color : var(--color-1);
+    -webkit-transition              : background-color 5000s ease-in-out 0s;
     transition              : background-color 5000s ease-in-out 0s;
 }
 
@@ -2683,7 +2677,8 @@ td:last-child {
 
 .screen-reader-text {
     clip      : rect(1px, 1px, 1px, 1px);
-    clip-path : inset(50%);
+    -webkit-clip-path : inset(50%);
+            clip-path : inset(50%);
     height    : 1px;
     width     : 1px;
     margin    : -1px;
@@ -2910,7 +2905,7 @@ font-family: 'Roboto Slab', serif;
     }
 
     .s-header__social li {
-        margin-right : 0.8rem;
+        margin-right : 2rem;
     }
 }
 
@@ -2935,14 +2930,17 @@ font-family: 'Roboto Slab', serif;
 }
 
 .theme-particles .s-intro {
-    background-color : var(--color-gray-15);
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282828+0,111111+100 */
-background: #282828; /* Old browsers */
-background: -moz-linear-gradient(top,  #282828 0%, #111111 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #282828 0%,#111111 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #282828 0%,#111111 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#111111',GradientType=0 ); /* IE6-9 */
-
+    background-color: var(--color-gray-15);
+    /*Permalink-usetoeditandsharethisgradient:;
+    https:;
+    //colorzilla.com/gradient-editor/#282828+0,111111+100*/background: #222222;
+    /*Oldbrowsers*/
+    /*FF3.6-15*/
+    /*Chrome10-25,Safari5.1-6*/background: linear-gradient(to bottom,  #282828 0%,#080808 100%);
+    /*W3C,IE10+,FF16+,Chrome26+,Opera12+,Safari7+*/-webkit-filter:;filter:;
+    progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#080808',GradientType=0 );
+     /* IE6-9 */
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#080808',GradientType=0 );
 }
 
 .theme-particles .s-intro .s-intro__content {
@@ -3247,17 +3245,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', end
     60%,
     80%,
     100% {
-        -webkit-transform : translateY(0);
         transform         : translateY(0);
     }
 
     20% {
-        -webkit-transform : translateY(-5px);
         transform         : translateY(-5px);
     }
 
     40% {
-        -webkit-transform : translateY(20px);
         transform         : translateY(20px);
     }
 }
@@ -3268,17 +3263,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', end
     60%,
     80%,
     100% {
-        -webkit-transform : translateY(0);
         transform         : translateY(0);
     }
 
     20% {
-        -webkit-transform : translateY(-5px);
         transform         : translateY(-5px);
     }
 
     40% {
-        -webkit-transform : translateY(20px);
         transform         : translateY(20px);
     }
 }
@@ -3378,7 +3370,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', end
 
 @media screen and (max-width: 600px) {
     .s-intro__content {
-        padding-bottom : 8rem;
+        padding-bottom : 4rem;
     }
 
     .s-intro .counter__time {
