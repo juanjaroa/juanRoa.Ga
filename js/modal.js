@@ -27,7 +27,7 @@ var modal = new tingle.modal({
 
 
 // set content
-modal.setContent('<h1>proto una sorpresa!</h1><button id="close-modal" class="button-circle">X</button>');
+modal.setContent('<h2>pronto una sorpresa!</h2><button id="close-modal" class="button-circle">X</button>');
 
 
 
