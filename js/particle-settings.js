@@ -1,27 +1,27 @@
 particlesJS("particles-js", {
     particles: {
         number: { value: 250, density: { enable: true, value_area: 1000 } },
-        color: { value: "random" },
+        color: { value: "#ffffff" },
         shape: {
             type: ["circle", "edge", "triangle", "polygon"],
             stroke: { width: 0, color: "" },
             polygon: { nb_sides: 5 }
         },
         opacity: {
-            value: 0.75,
+            value: 1,
             random: true,
-            anim: { enable: true, speed: 1, opacity_min: 0.33, sync: false }
+            anim: { enable: true, speed: 3, opacity_min: 0.75, sync: false }
         },
         size: {
-            value: 5,
+            value: 6,
             random: true,
-            anim: { enable: true, speed: 4, size_min: 3, sync: false }
+            anim: { enable: true, speed: 3, size_min: 3, sync: true }
         },
         line_linked: {
             enable: true,
             distance: 150,
             color: "#ffffff",
-            opacity: 0.66,
+            opacity: 1,
             width: 0.75
         },
         move: {

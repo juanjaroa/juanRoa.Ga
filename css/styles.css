@@ -2928,20 +2928,16 @@ font-family: 'Roboto Slab', serif;
 .s-intro a {
     border : none;
 }
-
+/*
 .theme-particles .s-intro {
     background-color: var(--color-gray-15);
-    /*Permalink-usetoeditandsharethisgradient:;
-    https:;
-    //colorzilla.com/gradient-editor/#282828+0,111111+100*/background: #222222;
-    /*Oldbrowsers*/
-    /*FF3.6-15*/
-    /*Chrome10-25,Safari5.1-6*/background: linear-gradient(to bottom,  #282828 0%,#080808 100%);
-    /*W3C,IE10+,FF16+,Chrome26+,Opera12+,Safari7+*/-webkit-filter:;filter:;
+    background: #222222;
+    background: linear-gradient(to bottom,  #282828 0%,#080808 100%);
+    -webkit-filter:;filter:;
     progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#080808',GradientType=0 );
-     /* IE6-9 */
     -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#080808',GradientType=0 );
 }
+*/
 
 .theme-particles .s-intro .s-intro__content {
     pointer-events : none;
