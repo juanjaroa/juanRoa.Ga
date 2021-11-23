@@ -1,0 +1,16 @@
+:root {
+  --color-acento: red;
+  --stroke-w: 0.5em;
+}
+
+.sombra {
+  fill: var(--color-acento);
+  stroke: var(--color-acento);
+  stroke-width: var(--stroke-w);
+}
+
+.base {
+  fill: white;
+  stroke: var(--color-acento);
+  stroke-width: var(--stroke-w);
+}
